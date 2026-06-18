@@ -26,11 +26,34 @@
 
     <div id="panier-contenu">
 
-        <p>Votre panier est vide.</p>
+{% if articles %}
 
-    </div>
+    <ul>
 
-    <h3>Total : 0 €</h3>
+    {% for article in articles %}
+
+        <li>
+            {{ article.nom }} - {{ article.prix }} €
+
+            <a href="/supprimer/{{ article.code }}">
+                Supprimer
+            </a>
+
+        </li>
+
+    {% endfor %}
+
+    </ul>
+
+{% else %}
+
+    <p>Votre panier est vide.</p>
+
+{% endif %}
+
+</div>
+
+    <h3>Total : {{ total }} €</h3>
 
     <button>Payer</button>
 
