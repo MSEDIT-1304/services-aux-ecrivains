@@ -15,6 +15,7 @@ body {
 }
 
 .contenu {
+    margin-left: 240px;
     text-align: center;
     padding: 10px 20px;
 }
@@ -74,19 +75,24 @@ h2 {
 .service p {
     color: #444;
 }
+
 .navbar {
-    background-color: #111;
-    padding: 15px;
-    text-align: center;
-    position: sticky;
+    position: fixed;
+    left: 0;
     top: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #111;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
     z-index: 1000;
 }
 
 .navbar a {
     color: #d4af37;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 15px 25px;
     font-weight: bold;
     font-size: 15px;
 }
