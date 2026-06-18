@@ -4,7 +4,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .banniere {
@@ -22,6 +22,8 @@ body {
 
 .logo {
     width: 120px;
+    display: block;
+    margin: 20px auto;
 }
 
 h1 {
@@ -32,8 +34,8 @@ h1 {
 
 h2 {
     color: #d4af37;
-    font-size: 1.5rem;
-    margin-top: 100px;
+    font-size: 1.2rem;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
