@@ -21,7 +21,20 @@ def contact():
 @app.route("/panier")
 def panier():
     return render_template("panier.html")
-    
+
+@app.route("/ajouter/<produit>")
+def ajouter(produit):
+
+    if "panier" not in session:
+        session["panier"] = []
+
+    panier = session["panier"]
+    panier.append(produit)
+
+    session["panier"] = panier
+
+    return redirect("/panier")
+
 if __name__ == "__main__":
     app.run(debug=True)
 
