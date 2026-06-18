@@ -177,6 +177,54 @@ details[open] summary {
     scroll-margin-top: 150px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .contenu {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .banniere {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .ouvrages {
+        width: 150px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p,
+    li {
+        font-size: 14px;
+    }
+}
+
 
 
 
