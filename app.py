@@ -142,4 +142,20 @@ def success():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+st.markdown("""
+<div style="
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+text-align:center;
+padding:10px;
+background:#000814;
+color:#d4af37;
+z-index:9999;
+">
+M.S Édit - Création de sites web et applications mobiles
+</div>
+""", unsafe_allow_html=True)
     
