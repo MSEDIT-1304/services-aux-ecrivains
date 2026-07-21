@@ -14,7 +14,7 @@ body {
 }
 
 .contenu {
-    margin-left: 240px;
+    margin-left:0px;
     text-align: center;
     padding: 10px 20px;
     background: #f5efe6;
@@ -40,8 +40,8 @@ h2 {
 }
 .slogan {
     font-size: 1.2rem;
-    color: #ffffff;
-    font-style: italic;
+    color: #7A6656;
+    font-style: ital
 }
 .presentation,
 
@@ -65,7 +65,7 @@ h2 {
     max-width: 900px;
     margin: 30px auto;
     text-align: left;
-    color: white;
+    color: #4B4038;
 }
 
 .service h3 {
@@ -74,20 +74,11 @@ h2 {
 }
 
 .service p {
-    color: white;
+    color: #4B4038;
 }
 
-.navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 220px;
-    height: 100vh;
-    background-color: #111;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    z-index: 1000;
+.navbar{
+    display:none;
 }
 
 .navbar a{
@@ -226,21 +217,21 @@ details[open] summary {
     /* Boutons Ajouter au panier */
 
 button {
-    background: linear-gradient(to bottom, #D4B07A, #B08A4A);
-    color: #000;
-    border: 2px solid #B08A4A;
-    border-radius: 8px;
+    background: linear-gradient(to bottom,#E3C99D,#C9A86C);
+    color:#3B3128;
+    border:1px solid #C9A86C;
+    border-radius:10px;
     padding: 10px 22px;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 10px 0 20px 0;
-    box-shadow: 0 0 8px rgba(176,138,74,0.35);
+    box-shadow:0 5px 15px rgba(176,138,74,.20);
 }
 
 button:hover {
-    background: linear-gradient(to bottom, #E5CDA5, #C29A63);
+    background:linear-gradient(to bottom,#F0DDC1,#D8B67E);
     color: #000;
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(212,175,55,0.8);
