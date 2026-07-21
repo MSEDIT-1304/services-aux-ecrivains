@@ -420,6 +420,148 @@ button:active {
 
 }
 
+/*==================================================
+            CARTES PREMIUM
+==================================================*/
+
+.service{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:55px auto;
+
+}
+
+
+.service-card{
+
+    width:100%;
+
+    max-width:760px;
+
+    background:#FFFCF8;
+
+    border:1px solid #E7D5B4;
+
+    border-radius:18px;
+
+    padding:45px;
+
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+}
+
+
+.service-card h3{
+
+    text-align:center;
+
+    color:#B08A4A;
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+}
+
+
+.service-card h4{
+
+    text-align:center;
+
+    color:#B08A4A;
+
+    font-size:22px;
+
+    margin:40px 0 20px;
+
+}
+
+
+.intro{
+
+    text-align:center;
+
+    color:#6C5C4E;
+
+    margin-bottom:25px;
+
+}
+
+
+.service-card ul{
+
+    width:360px;
+
+    margin:0 auto 35px;
+
+    line-height:2;
+
+}
+
+
+.tarif{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid #E8DDD0;
+
+    padding:14px 0;
+
+    font-size:17px;
+
+}
+
+
+.tarif strong{
+
+    color:#B08A4A;
+
+    font-size:20px;
+
+}
+
+
+.btn-centre{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:20px 0 30px;
+
+}
+
+
+.devis{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#7A6656;
+
+    font-style:italic;
+
+}
+
+
+.service-card hr{
+
+    border:none;
+
+    border-top:1px solid #E8DDD0;
+
+    margin:45px 0;
+
+}
+
 
 
 
