@@ -569,6 +569,42 @@ button:active {
 
 }
 
+/* ===========================
+   BOUTONS PANIER
+=========================== */
+
+.btn-panier{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-secondaire{
+
+    background:#F8F1E6;
+
+    color:#B08A4A;
+
+    border:2px solid #D6B57A;
+
+}
+
+.btn-secondaire:hover{
+
+    background:#EFE4D5;
+
+}
+
+
+
 
 
 
