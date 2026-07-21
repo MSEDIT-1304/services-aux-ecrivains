@@ -264,41 +264,43 @@ button:active {
 
     position:fixed;
 
-    top:30px;
+    top:24px;
 
-    left:30px;
+    left:24px;
 
-    width:52px;
+    width:42px;
 
-    height:52px;
+    height:42px;
 
     border:none;
 
     border-radius:50%;
 
-    background:rgba(255,253,250,.95);
+    background:rgba(255,250,244,.95);
 
     color:#B08A4A;
 
-    font-size:30px;
+    font-size:22px;
 
-    font-weight:bold;
+    font-weight:700;
 
     cursor:pointer;
 
     z-index:9999;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    box-shadow:0 5px 14px rgba(0,0,0,.14);
+
+    transition:.25s;
 
 }
 
 #menu-btn:hover{
 
-    background:#ffffff;
+    background:#FFF8EE;
+
+    transform:scale(1.08);
 
 }
-
-
 
 #menu-mobile{
 
@@ -328,15 +330,11 @@ button:active {
 
 }
 
-
-
 #menu-mobile.open{
 
     left:18px;
 
 }
-
-
 
 #menu-mobile a{
 
@@ -360,8 +358,6 @@ button:active {
 
 }
 
-
-
 #menu-mobile a:hover{
 
     background:#EFE4D5;
@@ -371,8 +367,6 @@ button:active {
     padding-left:28px;
 
 }
-
-
 
 #menu-close{
 
@@ -389,8 +383,6 @@ button:active {
     cursor:pointer;
 
 }
-
-
 
 #overlay{
 
@@ -412,8 +404,6 @@ button:active {
 
 }
 
-
-
 #overlay.show{
 
     display:block;
@@ -434,25 +424,42 @@ button:active {
 
 }
 
-
 .service-card{
 
     width:100%;
 
-    max-width:760px;
+    max-width:640px;
 
-    background:#FFFCF8;
+    background:#F7EFE2;
 
-    border:1px solid #E7D5B4;
+    border:2px solid #D6B57A;
 
     border-radius:18px;
 
-    padding:45px;
+    padding:28px;
 
-    box-shadow:0 12px 28px rgba(0,0,0,.08);
+    box-shadow:0 10px 24px rgba(0,0,0,.08);
 
 }
 
+.service-card{
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease,
+        border-color .30s ease;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#B08A4A;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.16);
+
+}
 
 .service-card h3{
 
