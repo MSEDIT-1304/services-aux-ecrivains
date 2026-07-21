@@ -44,8 +44,10 @@
         <li>
             {{ article.nom }} - {{ article.prix }} €
 
-            <a href="/supprimer/{{ article.code }}">
-                Supprimer
+            <a href="/supprimer/{{ article.code }}"
+               class="supprimer"
+               title="Supprimer cet article">
+                🗑️
             </a>
 
         </li>
@@ -104,6 +106,28 @@ overlay.onclick = () => {
     overlay.classList.remove("show");
 }
 
+
+/* ===========================
+   LIEN SUPPRIMER
+=========================== */
+
+.supprimer{
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    margin-left:10px;
+
+    transition:.25s;
+
+}
+
+.supprimer:hover{
+
+    transform:scale(1.15);
+
+}
 </script>
 <br><br>
 
