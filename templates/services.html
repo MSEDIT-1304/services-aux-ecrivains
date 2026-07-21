@@ -11,12 +11,20 @@
 <body>
 
     
-<nav class="navbar">
-    <a href="/">Accueil</a>
-    <a href="/services">Mes services</a>
-    <a href="/parcours">Mon parcours d'auteure</a>
-    <a href="/contact">Contact</a>
-    <a href="/panier">Panier</a>
+<div id="overlay"></div>
+
+<button id="menu-btn">☰</button>
+
+<nav id="menu-mobile">
+
+    <div id="menu-close">✕</div>
+
+    <a href="/">🏠 Accueil</a>
+    <a href="/services">✍ Mes services</a>
+    <a href="/parcours">📖 Mon parcours d'auteure</a>
+    <a href="/contact">📞 Contact</a>
+    <a href="/panier">🛒 Panier</a>
+
 </nav>
     
     <img src="{{ url_for('static', filename='images/banniere-msedit.png') }}" alt="Bannière M.S Édit" class="banniere">
@@ -192,6 +200,31 @@ Couverture + 4e + résumé : 250 €
 
 </section>
 </div>
+
+<script>
+
+const menu = document.getElementById("menu-mobile");
+const btn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("menu-close");
+const overlay = document.getElementById("overlay");
+
+btn.onclick = () => {
+    menu.classList.add("open");
+    overlay.classList.add("show");
+}
+
+closeBtn.onclick = () => {
+    menu.classList.remove("open");
+    overlay.classList.remove("show");
+}
+
+overlay.onclick = () => {
+    menu.classList.remove("open");
+    overlay.classList.remove("show");
+}
+
+</script>
+    
 </body>
 </html>
 
