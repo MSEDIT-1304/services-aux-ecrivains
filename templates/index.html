@@ -12,29 +12,6 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
-<script>
-
-const menu = document.getElementById("menu-mobile");
-const btn = document.getElementById("menu-btn");
-const closeBtn = document.getElementById("menu-close");
-const overlay = document.getElementById("overlay");
-
-btn.addEventListener("click", () => {
-    menu.classList.add("open");
-    overlay.classList.add("show");
-});
-
-closeBtn.addEventListener("click", () => {
-    menu.classList.remove("open");
-    overlay.classList.remove("show");
-});
-
-overlay.addEventListener("click", () => {
-    menu.classList.remove("open");
-    overlay.classList.remove("show");
-});
-
-</script>
 
 <body>
     
@@ -88,6 +65,30 @@ overlay.addEventListener("click", () => {
 </section>
 
 </div>
+
+<script>
+
+const menu = document.getElementById("menu-mobile");
+const btn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("menu-close");
+const overlay = document.getElementById("overlay");
+
+btn.addEventListener("click", () => {
+    menu.classList.add("open");
+    overlay.classList.add("show");
+});
+
+closeBtn.addEventListener("click", () => {
+    menu.classList.remove("open");
+    overlay.classList.remove("show");
+});
+
+overlay.addEventListener("click", () => {
+    menu.classList.remove("open");
+    overlay.classList.remove("show");
+});
+
+</script>
 </body>
 
 </html>
