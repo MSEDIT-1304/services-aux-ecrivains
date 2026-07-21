@@ -240,6 +240,159 @@ button:hover {
 button:active {
     transform: scale(0.97);
 }
+/* ===========================
+   MENU HAMBURGER
+=========================== */
+
+#menu-btn{
+
+    position:fixed;
+
+    top:20px;
+
+    left:20px;
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,253,250,.95);
+
+    color:#B08A4A;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    z-index:9999;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+#menu-btn:hover{
+
+    background:#ffffff;
+
+}
+
+
+
+#menu-mobile{
+
+    position:fixed;
+
+    top:0;
+
+    left:-320px;
+
+    width:300px;
+
+    height:100%;
+
+    background:#fffdfa;
+
+    box-shadow:5px 0 30px rgba(0,0,0,.15);
+
+    transition:.35s;
+
+    z-index:9998;
+
+    padding-top:90px;
+
+}
+
+
+
+#menu-mobile.open{
+
+    left:0;
+
+}
+
+
+
+#menu-mobile a{
+
+    display:block;
+
+    padding:18px 35px;
+
+    text-decoration:none;
+
+    color:#4B4038;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+
+
+#menu-mobile a:hover{
+
+    color:#B08A4A;
+
+    background:#f5efe6;
+
+}
+
+
+
+#menu-close{
+
+    position:absolute;
+
+    top:18px;
+
+    right:20px;
+
+    font-size:34px;
+
+    color:#B08A4A;
+
+    cursor:pointer;
+
+}
+
+
+
+#overlay{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.25);
+
+    display:none;
+
+    z-index:9997;
+
+}
+
+
+
+#overlay.show{
+
+    display:block;
+
+}
 
 
 
