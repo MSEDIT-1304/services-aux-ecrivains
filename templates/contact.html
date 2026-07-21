@@ -11,19 +11,31 @@
 
 <body>
 
-<nav class="navbar">
+<div id="overlay"></div>
+
+<button id="menu-btn">☰</button>
+
+<nav id="menu-mobile">
+
+    <div id="menu-close">✕</div>
+
     <a href="/">Accueil</a>
     <a href="/services">Mes services</a>
     <a href="/parcours">Mon parcours d'auteure</a>
     <a href="/contact">Contact</a>
     <a href="/panier">Panier</a>
+
 </nav>
 
-<img src="{{ url_for('static', filename='images/banniere-msedit.png') }}" alt="Bannière M.S Édit" class="banniere">
+<img src="{{ url_for('static', filename='images/banniere-msedit.png') }}"
+     alt="Bannière M.S Édit"
+     class="banniere">
 
 <div class="contenu">
 
-    <img src="{{ url_for('static', filename='images/logo-msedit.png') }}" alt="Logo M.S Édit" class="logo">
+    <img src="{{ url_for('static', filename='images/logo-msedit.png') }}"
+         alt="Logo M.S Édit"
+         class="logo">
 
     <h1>Contact</h1>
 
@@ -47,9 +59,7 @@
 
     </form>
 
-    <p>
-        📧 ms.edit.mg@gmail.com
-    </p>
+    <p>📧 ms.edit.mg@gmail.com</p>
 
     <p>
         <strong>Envoi du manuscrit :</strong><br>
@@ -58,6 +68,30 @@
     </p>
 
 </div>
+
+<script>
+
+const menu = document.getElementById("menu-mobile");
+const btn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("menu-close");
+const overlay = document.getElementById("overlay");
+
+btn.onclick = () => {
+    menu.classList.add("open");
+    overlay.classList.add("show");
+}
+
+closeBtn.onclick = () => {
+    menu.classList.remove("open");
+    overlay.classList.remove("show");
+}
+
+overlay.onclick = () => {
+    menu.classList.remove("open");
+    overlay.classList.remove("show");
+}
+
+</script>
 
 </body>
 </html>
